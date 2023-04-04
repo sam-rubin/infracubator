@@ -1,0 +1,14 @@
+1.Pull Docker Image
+  docker pull nginx
+
+2. Start a Container with Port Forwarding
+docker run  -d -p 8080:80 --name infracubator-assignment-one nginx
+
+3. Checks the log inside the container
+docker logs infracubator-assignment-one
+
+4. Go Inside a Container
+docker exec -it infracubator-assignment-one sh
+
+5. Stop a Container
+ docker stop infracubator-assignment-one
